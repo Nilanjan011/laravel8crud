@@ -21,7 +21,7 @@
                         </ul>
                     </div>
                 @else
-                   <h3>No data found</h3> 
+                   {{-- <h3>No data found</h3>  --}}
                 @endif
                 <div class="form-group">
                   <label for="exampleInputEmail1">Name</label>

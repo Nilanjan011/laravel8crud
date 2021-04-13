@@ -15,7 +15,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $product = product::toBase()->orderBy('id','DESC')->get();
+        $product = product::toBase()->orderBy('id','DESC')->paginate(2);
         // dd($product);
         return view("pruductlist",compact("product"))->with('message','successfully inserted');;
     }
