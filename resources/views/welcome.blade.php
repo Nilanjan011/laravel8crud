@@ -22,6 +22,15 @@
     </head>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+            {{name()}}
+            <br>one single raw
+            {{-- {{oneRow(1,'product')}} --}}
+            @php
+                $row=oneRow(1,'product');
+            @endphp 
+            {{$row[0]->name}}
+            <br>get one field
+            {{oneField(1,'name','product')}}
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth

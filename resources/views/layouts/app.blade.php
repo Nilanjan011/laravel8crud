@@ -19,9 +19,14 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <style>
+        /* laravel pagination style */
         .w-5{
-            width: 50px !important;
+            width: 25px;
         }
+        .flex-1{
+            display: none;
+        }
+        /* laravel pagination style */
     </style>
 </head>
 <body>

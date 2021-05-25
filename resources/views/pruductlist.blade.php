@@ -58,7 +58,7 @@
                         
                       </tr>
                     @empty
-                        no data found
+                        No data found
                     @endforelse
                 </tbody>
               </table>
